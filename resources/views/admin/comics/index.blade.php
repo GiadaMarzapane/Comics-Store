@@ -5,7 +5,7 @@
     Comics
 </h1>
 
-<a href="" class="btn btn-success mb-3">
+<a href="{{ route('admin.comics.create') }}" class="btn btn-success mb-3">
     Inserisci un nuovo comic
 </a>
 
