@@ -38,7 +38,11 @@ class ComicController extends Controller
      */
     public function store(StoreComicRequest $request)
     {
-        //
+        $data = $request->validated();
+
+        $newComic = Comic::create($data);
+
+        return redirect()->route('admin.comics.show', $newComic->id);
     }
 
     /**
