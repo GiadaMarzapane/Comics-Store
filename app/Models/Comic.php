@@ -5,19 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Store extends Model
+class Comic extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'name',
-        'address',
-        'description'
+        'description',
+        'image',
+        'price',
+        'quantity'
     ];
 
-    // public function comics() {
+    // public function store() {
 
-    //     return $this->hasMany(Comic::class);
+    //     return $this->belongsTo(Store::class);
+
 
     // }
 }
