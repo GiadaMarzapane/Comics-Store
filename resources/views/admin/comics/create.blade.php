@@ -3,7 +3,10 @@
 @section('content')
 
 <div class="my-5">
-    <form>
+    <form action="{{ route('admin.comics.store') }}" method="post">
+
+      @csrf
+
       <div class="mb-3">
         <label for="name" class="form-label">Nome comic:</label>
         <input
@@ -35,7 +38,7 @@
         type="text" 
         name="image" 
         id="image"
-        placeholder="Inserisci descrizione"></input>
+        placeholder="Inserisci descrizione">
       </div>
     
         <div class="mb-3">
@@ -47,7 +50,7 @@
         name="price" 
         id="price"
         placeholder="Inserisci prezzo"
-        step="0.01"></input>
+        step="0.01">
       </div>
     
        <div class="mb-3">
@@ -58,7 +61,7 @@
         type="number" 
         name="quantity" 
         id="quantity"
-        placeholder="Inserisci quantità"></input>
+        placeholder="Inserisci quantità">
       </div>
     
       <button type="submit" class="mb-5 btn btn-success">Crea</button>
