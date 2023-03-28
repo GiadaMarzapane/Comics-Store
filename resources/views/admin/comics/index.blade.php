@@ -32,12 +32,6 @@
                 <a href="{{ route('admin.comics.show', $comic->id) }}" class="btn btn-primary">
                     Mostra
                 </a>
-                <a href="" class="btn btn-warning my-1">
-                    Aggiorna
-                </a>
-                <a href="" class="btn btn-danger">
-                    Elimina
-                </a>
             </td>
         </tr>
     @endforeach
