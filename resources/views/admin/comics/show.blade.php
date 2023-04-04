@@ -22,7 +22,7 @@
     </p>
 
     <div class="mb-5">
-         <a href="" class="btn btn-warning my-1">
+         <a href="{{ route('admin.comics.edit', $comic->id) }}" class="btn btn-warning my-1">
             Aggiorna
         </a>
         <a href="" class="btn btn-danger">
