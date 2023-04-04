@@ -26,7 +26,7 @@
             <th scope="row">{{ $comic->id }}</th>
             <td>{{ $comic->name }}</td>
             <td>{{ $comic->description }}</td>
-            <td>{{ $comic->price }}</td>
+            <td>€ {{ $comic->price }}</td>
             <td>{{ $comic->quantity }}</td>
             <td>
                 <a href="{{ route('admin.comics.show', $comic->id) }}" class="btn btn-primary">
