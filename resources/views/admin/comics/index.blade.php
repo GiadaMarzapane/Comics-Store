@@ -11,16 +11,15 @@
 
 <table class="table">
     <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Descrizione</th>
-        <th scope="col">Prezzo</th>
-        <th scope="col">Quantità</th>
-      </tr>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Descrizione</th>
+            <th scope="col">Prezzo</th>
+            <th scope="col">Quantità</th>
+        </tr>
     </thead>
     <tbody>
-      
     @foreach ($comics as $comic)
         <tr>
             <th scope="row">{{ $comic->id }}</th>
@@ -37,6 +36,6 @@
     @endforeach
         
     </tbody>
-  </table>
+</table>
     
 @endsection

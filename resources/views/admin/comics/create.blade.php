@@ -53,7 +53,7 @@
         step="0.01">
       </div>
     
-       <div class="mb-3">
+      <div class="mb-3">
         <label for="quantity" class="form-label">Quantità:</label>
         <input
         class="form-control"
