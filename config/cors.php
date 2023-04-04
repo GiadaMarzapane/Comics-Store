@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => [env('API_DEFAULT_URL', 'http://localhost:5174')],
 
     'allowed_origins_patterns' => [],
 
