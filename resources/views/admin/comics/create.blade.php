@@ -32,10 +32,10 @@
       </div>
     
       <div class="mb-3">
-        <label for="image" class="form-label">Descrizione:</label>
+        <label for="image" class="form-label">Immagine:</label>
         <input
         class="form-control"
-        type="text" 
+        type="file" 
         name="image" 
         id="image"
         placeholder="Inserisci descrizione">
