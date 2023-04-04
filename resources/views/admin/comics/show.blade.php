@@ -25,9 +25,16 @@
          <a href="{{ route('admin.comics.edit', $comic->id) }}" class="btn btn-warning my-1">
             Aggiorna
         </a>
-        <a href="" class="btn btn-danger">
-            Elimina
-        </a>
+
+        <form action="{{ route('admin.comics.destroy', $comic->id) }}" class="d-inline-block" method="post">
+            @csrf
+
+            @method('delete')
+
+            <button class="btn btn-danger" type="submit">Elimina</button>
+        
+        </form>
+
     </div>
 
 @endsection
