@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 // Models
 use App\Models\Comic;
 
+// Helpers
+use Exception;
+
 class ComicController extends Controller
 {
     /**
@@ -55,7 +58,24 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        //
+        try {
+
+            $comic = Comic::where('id', $id)->firstOrFail();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'OK',
+                'comics' => $comic
+            ]);
+
+        } catch (Exception $e) {
+
+            return response()->json([
+                'success' => false,
+                'message' => $e->getMessage()
+            ]);
+
+        }
     }
 
     /**

@@ -18,5 +18,5 @@ use App\Http\Controllers\Api\ComicController;
 
 Route::name('api.')->group(function(){
     Route::resource('comics', ComicController::class)
-    ->only(['index']);
+    ->only(['index', 'show']);
 });
